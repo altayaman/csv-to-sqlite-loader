@@ -6,11 +6,11 @@
 * a)  
 Run in terminal:  
 ```
-python csv_to_mysql_v4.py -f <file path> -t <table name> -s <schema name>  
+python csv_to_sqlite_4.1.py -f <file path> -t <table name> -s <sqlite file name>  
 ```
 \<file path\> - csv file path you need to insert into db.  
 \<table name\> - table name that needs to be created to persist csv file data. if not passed, csv file name will be taken as table name.  
-\<schema name\> - schema name where table need to be created. if not passed, default will be taken as schema name. default schema name needs to be set in 'DB credentials' section below.  
+\<sqlite file name\> - schema name where table need to be created. if not passed, default will be taken as schema name. default schema name needs to be set in 'DB credentials' section below.  
 
 * b)  
 After script is launched, it will start analyzing csv file to get column names and column data types.  
@@ -51,6 +51,6 @@ Ex:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INDICATE COLUMNS TO BE INCLUDED:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter column numbers numbers seperated by comma:  1,2,7    (this is a user input, which means insert only 1st, 2nd and 7th columns only)  
 * e)  
-After that, a couple reminders might appear in case if no table name and/or schema name were not passed at the beginning.  
+After that, a couple reminders might appear in case if no table name and/or sqlite file name were not passed at the beginning.  
 And insertion process will start.  
 
